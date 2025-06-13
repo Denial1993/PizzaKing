@@ -1,0 +1,68 @@
+# Build results
+bin/
+obj/
+out/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+*.dll
+*.exe
+*.app
+*.pdb
+*.cache
+*.log
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider & VSCode
+.idea/
+.vscode/
+
+# ASP.NET Core
+appsettings.*.json
+!appsettings.json
+
+# IIS / Azure
+*.vspscc
+.vs/
+.vscode/
+*.PublishProfiles/
+wwwroot/*.db
+wwwroot/*.sqlite
+wwwroot/*.bak
+
+# DotNet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.deps.json
+*.runtimeconfig.json
+
+# Logs
+*.log
+logs/
+
+# System files
+Thumbs.db
+Desktop.ini
+*.DS_Store
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+.nuget/
+packages/
+
+# Secrets
+secrets.json
+*.key
+*.crt
+
+# EF Core Migrations snapshot (可選擇性忽略)
+Migrations/*Designer.cs
