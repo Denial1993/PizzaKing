@@ -1,0 +1,25 @@
+namespace PizzaKing.Controllers;
+    
+
+public class TestController : Controller
+{
+    private readonly ILogger<TestController> _logger;
+
+    public TestController(ILogger<TestController> logger)
+    {
+        _logger = logger;
+    }
+
+    [HttpGet]
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Index(string name)
+    {
+        _logger.LogInformation("TestController.Index called with name: {Name}", name);
+        return View();
+    }
+}
