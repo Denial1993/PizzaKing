@@ -1,25 +1,31 @@
 namespace PizzaKing.Controllers;
-    
+
 
 public class TestController : Controller
 {
-    private readonly ILogger<TestController> _logger;
-
-    public TestController(ILogger<TestController> logger)
+    public string Try()
     {
-        _logger = logger;
+        // This is a placeholder for the Index action method.
+        // You can return a view or any other result as needed.
+        return "Hello, this is the TestController's Try method!";
     }
+    // private readonly ILogger<TestController> _logger;
 
-    [HttpGet]
-    public IActionResult Index()
-    {
-        return View();
-    }
+    // public TestController(ILogger<TestController> logger)
+    // {
+    //     _logger = logger;
+    // }
 
-    [HttpPost]
-    public IActionResult Index(string name)
-    {
-        _logger.LogInformation("TestController.Index called with name: {Name}", name);
-        return View();
-    }
+    // [HttpGet]
+    // public IActionResult Index()
+    // {
+    //     return View();
+    // }
+
+    // [HttpPost]
+    // public IActionResult Index(string name)
+    // {
+    //     _logger.LogInformation("TestController.Index called with name: {Name}", name);
+    //     return View();
+    // }
 }
